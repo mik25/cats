@@ -36,9 +36,6 @@ EXPOSE 7860
 ENV NODE_ENV=production
 ENV PORT=7860
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:7860/ || exit 1
 
 # Start command
 CMD ["node", "index.js"]
