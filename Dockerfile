@@ -35,7 +35,7 @@ RUN mkdir -p /app/data/cache && \
 USER appuser
 
 # Expose port (HuggingFace uses 7860 by default, but your app uses 7000)
-EXPOSE 7000
+EXPOSE 7860
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
@@ -43,7 +43,7 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
 
 # Set environment variables for production
 ENV NODE_ENV=production
-ENV PORT=7000
+ENV PORT=7860
 
 # Start command
 CMD ["node", "index.js"]
