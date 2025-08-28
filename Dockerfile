@@ -7,10 +7,6 @@ WORKDIR /app
 # Create non-root user for security
 RUN groupadd -r appuser && useradd -r -g appuser appuser
 
-# Create necessary directories with proper permissions
-RUN mkdir -p /app/data/cache /app/log /app/public /app/src /app/routes && \
-    chown -R appuser:appuser /app
-
 # Copy package files first for better Docker layer caching
 COPY package*.json ./
 
@@ -20,16 +16,14 @@ RUN npm ci --only=production && npm cache clean --force
 # Copy application files
 COPY . .
 
-# Set proper ownership after copying files
-RUN chown -R appuser:appuser /app
+# Create necessary directories with proper permissions
+RUN mkdir -p /app/data/cache /app/log /app/public /app/src /app/routes
 
-# Ensure log directory is writable
-RUN chmod 755 /app/log
-
-# Create data directory for file cache with proper permissions
-RUN mkdir -p /app/data/cache && \
-    chown -R appuser:appuser /app/data && \
-    chmod -R 755 /app/data
+# Create non-root user and set ownership AFTER creating directories
+RUN groupadd -r appuser && useradd -r -g appuser appuser && \
+    chown -R appuser:appuser /app && \
+    chmod -R 775 /app/data && \
+    chmod -R 775 /app/log
 
 # Switch to non-root user
 USER appuser
