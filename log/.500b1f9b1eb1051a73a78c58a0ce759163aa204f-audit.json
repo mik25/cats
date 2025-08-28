@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 3
+    },
+    "auditLog": "K:\\addons\\cats rewrite\\stremio-catalog-providers\\stremio-catalog-providers-main\\log\\.500b1f9b1eb1051a73a78c58a0ce759163aa204f-audit.json",
+    "files": [
+        {
+            "date": 1756106320147,
+            "name": "K:\\addons\\cats rewrite\\stremio-catalog-providers\\stremio-catalog-providers-main\\log\\application-2025-08-25.log",
+            "hash": "79c498ed6a01d06afafb263e97b4ae4528065f55c082ac3ed19b23c6b6b91d62"
+        }
+    ],
+    "hashType": "sha256"
+}

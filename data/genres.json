@@ -1,0 +1,212 @@
+[
+  {
+    "genre_id": 28,
+    "genre_name": "Action",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 12,
+    "genre_name": "Adventure",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 16,
+    "genre_name": "Animation",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 35,
+    "genre_name": "Comedy",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 80,
+    "genre_name": "Crime",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 99,
+    "genre_name": "Documentary",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 18,
+    "genre_name": "Drama",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10751,
+    "genre_name": "Family",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 14,
+    "genre_name": "Fantasy",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 36,
+    "genre_name": "History",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 27,
+    "genre_name": "Horror",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10402,
+    "genre_name": "Music",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 9648,
+    "genre_name": "Mystery",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10749,
+    "genre_name": "Romance",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 878,
+    "genre_name": "Science Fiction",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10770,
+    "genre_name": "TV Movie",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 53,
+    "genre_name": "Thriller",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10752,
+    "genre_name": "War",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 37,
+    "genre_name": "Western",
+    "media_type": "movie",
+    "language": "en"
+  },
+  {
+    "genre_id": 10759,
+    "genre_name": "Action & Adventure",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 16,
+    "genre_name": "Animation",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 35,
+    "genre_name": "Comedy",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 80,
+    "genre_name": "Crime",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 99,
+    "genre_name": "Documentary",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 18,
+    "genre_name": "Drama",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10751,
+    "genre_name": "Family",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10762,
+    "genre_name": "Kids",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 9648,
+    "genre_name": "Mystery",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10763,
+    "genre_name": "News",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10764,
+    "genre_name": "Reality",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10765,
+    "genre_name": "Sci-Fi & Fantasy",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10766,
+    "genre_name": "Soap",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10767,
+    "genre_name": "Talk",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 10768,
+    "genre_name": "War & Politics",
+    "media_type": "tv",
+    "language": "en"
+  },
+  {
+    "genre_id": 37,
+    "genre_name": "Western",
+    "media_type": "tv",
+    "language": "en"
+  }
+]

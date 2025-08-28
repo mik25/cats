@@ -1,0 +1,12 @@
+[2025-08-25 08:25:41] [ERROR]: uncaughtException: log.debug is not a function
+TypeError: log.debug is not a function
+    at Object.<anonymous> (K:\addons\cats rewrite\stremio-catalog-providers\stremio-catalog-providers-main\src\helpers\cache.js:13:5)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (K:\addons\cats rewrite\stremio-catalog-providers\stremio-catalog-providers-main\src\helpers\catalog.js:5:46)

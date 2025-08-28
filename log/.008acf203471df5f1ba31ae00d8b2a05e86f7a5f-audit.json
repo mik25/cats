@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "K:\\addons\\cats rewrite\\stremio-catalog-providers\\stremio-catalog-providers-main\\log\\.008acf203471df5f1ba31ae00d8b2a05e86f7a5f-audit.json",
+    "files": [
+        {
+            "date": 1756106741657,
+            "name": "K:\\addons\\cats rewrite\\stremio-catalog-providers\\stremio-catalog-providers-main\\log\\exceptions-2025-08-25.log",
+            "hash": "14047f9dce90fab8d0d9e10604e83affff2ec8ebc38d237d1badd6990971b1db"
+        },
+        {
+            "date": 1756415100984,
+            "name": "K:\\addons\\cats rewrite\\stremio-catalog-providers\\stremio-catalog-providers-main\\log\\exceptions-2025-08-28.log",
+            "hash": "dd99da490fc7f6dc9de0d17099426f3b691c88706c8ba9c9df2a934b6c1613a5"
+        }
+    ],
+    "hashType": "sha256"
+}
