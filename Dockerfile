@@ -4,27 +4,21 @@ FROM node:18-slim
 # Install curl for health check
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
-# Create non-root user for security
-RUN groupadd -r appuser && useradd -r -g appuser -m appuser
-
-# Set working directory and change ownership to appuser
+# Set working directory
 WORKDIR /app
-RUN chown appuser:appuser /app
-
-# Switch to appuser for all subsequent operations
-USER appuser
 
 # Copy package files first for better Docker layer caching
-COPY --chown=appuser:appuser package*.json ./
+COPY package*.json ./
 
-# Install dependencies as appuser
+# Install dependencies
 RUN npm ci --only=production && npm cache clean --force
 
-# Copy application files with proper ownership
-COPY --chown=appuser:appuser . .
+# Copy application files
+COPY . .
 
-# Create necessary directories as appuser (so they have proper ownership from the start)
-RUN mkdir -p /app/data/cache /app/log /app/public /app/src /app/routes
+# Create necessary directories with full permissions
+RUN mkdir -p /app/data/cache /app/log /app/public /app/src /app/routes && \
+    chmod -R 777 /app/data /app/log
 
 # HuggingFace Spaces uses port 7860 by default
 EXPOSE 7860
