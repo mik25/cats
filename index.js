@@ -5,7 +5,7 @@ const path = require('path');
 const log = require('./src/helpers/logger');
 const routes = require('./src/routes/index');
 
-const PORT = process.env.PORT || 7860;
+const PORT = process.env.PORT || 80;
 const app = express();
 
 app.use(cors());
