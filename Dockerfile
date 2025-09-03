@@ -21,7 +21,7 @@ RUN mkdir -p /app/data/cache /app/log /app/public /app/src /app/routes && \
     chmod -R 777 /app/data /app/log
 
 # HuggingFace Spaces uses port 7860 by default
-EXPOSE 7860
+EXPOSE 80
 
 # Set environment variables for production
 ENV NODE_ENV=production
@@ -29,7 +29,7 @@ ENV PORT=7860
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:7860/ || exit 1
+    CMD curl -f http://localhost:80/ || exit 1
 
 # Start command
 CMD ["node", "index.js"]
