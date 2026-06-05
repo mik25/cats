@@ -12,7 +12,7 @@ const manifestTemplate = {
     description: 'Catalog from TMDB streaming providers.',
     resources: ['catalog'],
     types: ['movie', 'series'],
-    idPrefixes: ['tt'],
+    idPrefixes: ['tt', 'tmdb:'],
     catalogs: [],
     behaviorHints: {
         configurable: true,
@@ -123,7 +123,7 @@ const generateManifest = async (config) => {
             });
         });
 
-        const resources = ['catalog'];
+        const resources = ['catalog', 'meta'];
         if (additionalContent && additionalContent.trim() !== '') {
             resources.push('stream');
         }
