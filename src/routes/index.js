@@ -6,6 +6,7 @@ const posterRoutes = require('./poster');
 const providersRoutes = require('./providers');
 const streamRoutes = require('./stream');
 const traktRoutes = require('./trakt');
+const metaRoutes = require('./meta');
 const log = require('../helpers/logger');
 
 const router = express.Router();
@@ -63,6 +64,7 @@ router.use(configureRoutes);
 router.use(manifestRoutes);
 router.use(posterRoutes);
 router.use(providersRoutes);
+router.use(metaRoutes);
 router.use(streamRoutes);
 router.use(traktRoutes);
 
