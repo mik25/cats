@@ -493,4 +493,4 @@ const fetchAndStoreGenres = async (language, tmdbApiKey) => {
     }
 };
 
-module.exports = { makeRequest, fetchData, discoverContent, checkGenresExistForLanguage, fetchAndStoreGenres, getRecommendationsFromTmdb, getContentFromImdbId, getContentDetailsById, getImdbId, getSimilarContentFromTmdb };
+module.exports = { getContentDetails, makeRequest, fetchData, discoverContent, checkGenresExistForLanguage, fetchAndStoreGenres, getRecommendationsFromTmdb, getContentFromImdbId, getContentDetailsById, getImdbId, getSimilarContentFromTmdb };
